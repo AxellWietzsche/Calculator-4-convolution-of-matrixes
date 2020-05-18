@@ -35,20 +35,20 @@ var result = new Array(newr);
         result[e] = new Array(newc)
     }  
 //New values input
-for(var i=0; i<newr; i++){
-    for(var j=0; j<newc; j++){
-        result[i][j] = 2 * matrix[i][j] ;
+for(var e=0,i=0; e<newr,i<row; e++,i++){
+    for(var r=0,j=0; r<newc,j<cols; r++,j++){
+        result[e][r] = 2 * matrix[i][j] ;
     }
 }
 //Display
-for(var i=0; i<newr; i++){
-    for(var j=0; j<newc; j++){
-        document.write(result[i][j] + "("+i+","+j+")");
+for(var e=0,i=0; e<newr,i<row; e++,i++){
+    for(var r=0,j=0; r<newc,j<cols; r++,j++){
+        document.write(result[e][r] + "("+i+","+j+")");
     }
     document.write("<br>");
 }
  
-</Script>
+</script>
 
 </body>
 </html>
