@@ -1,0 +1,50 @@
+<html>
+<heaad><title>Matrix Convolution</title>
+</head>
+<body>
+<script>
+//Array
+  //matrix
+var rows = prompt("number of rows:");
+var cols = prompt("number of columns:");
+var matrix = new Array(rows);
+for (var i = 0; i<rows ;i++ ){
+    matrix[i] = new Array(cols);
+}
+
+  //omega
+var q = 3;
+var w = 3;
+var omega = new Array(q);
+for (var q = 0; q<3 ;q++ ){
+    omega[q] = new Array(w);
+}
+
+//Input
+  //omega
+for (var q = 0; q<3; q++){
+    for(w=0; w<3; w++){
+        omega[q][w] = prompt ("Enter values of omega: ");
+    }
+}
+  //matrix
+for (var i = 0; i<rows; i++){
+    for(j=0; j<cols; j++){
+        matrix[i][j] = prompt ("Enter values of matrix: ");
+    }
+}
+
+
+//Display
+for(var i=0; i<rows; i++){
+    for(var j=0; j<cols; j++){
+        document.write(matrix[i][j]);
+    }
+    document.write("<br>");
+}
+
+ 
+</Script>
+
+</body>
+</html>
