@@ -1,0 +1,54 @@
+<html>
+<heaad><title>Matrix Convolution</title>
+</head>
+<body>
+<script>
+//Array
+  //matrix
+var rows = prompt("number of rows:");
+var cols = prompt("number of columns:");
+var matrix = new Array(rows);
+for (var i = 0; i<rows ;i++ ){
+    matrix[i] = new Array(cols);
+}
+ //Input
+ for (var i = 0; i<rows; i++){
+    for(j=0; j<cols; j++){
+        matrix[i][j] = prompt ("Enter values of matrix: ");
+    }
+}
+//Display
+/*
+for(var i=0; i<rows; i++){
+    for(var j=0; j<cols; j++){
+        document.write(matrix[i][j]);
+    }
+    document.write("<br>");
+}
+*/
+
+//new values
+var newr= rows - 1;
+var newc = cols - 1;
+var result = new Array(newr);
+    for(var e=0; e<newr; e++){
+        result[e] = new Array(newc)
+    }  
+//New values input
+for(var i=0; i<newr; i++){
+    for(var j=0; j<newc; j++){
+        result[i][j] = 2 * matrix[i][j] ;
+    }
+}
+//Display
+for(var i=0; i<newr; i++){
+    for(var j=0; j<newc; j++){
+        document.write(result[i][j] + "("+i+","+j+")");
+    }
+    document.write("<br>");
+}
+ 
+</Script>
+
+</body>
+</html>
