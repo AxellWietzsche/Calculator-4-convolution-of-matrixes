@@ -41,9 +41,9 @@ for(var e=0,i=0; e<newr,i<row; e++,i++){
     }
 }
 //Display
-for(var e=0,i=0; e<newr,i<row; e++,i++){
-    for(var r=0,j=0; r<newc,j<cols; r++,j++){
-        document.write(result[e][r] + "("+i+","+j+")");
+for(var e=0; e<newr; e++){
+    for(var r=0; r<newc; r++){
+        document.write(result[e][r] + "("+e+","+r+")");
     }
     document.write("<br>");
 }
